@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música - The Pi Phone</title>
+    <link rel="icon" href="../Recursos/IMG/LogoPi.jpeg">
+    <link rel="stylesheet" href="../CSS/estilos_musica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <video autoplay muted loop class="video-background">
+        <source src="../Recursos/VIDEOS/video1.mp4" type="video/mp4">
+    </video>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../Recursos/IMG/LogoPi.jpeg" alt="Logo The Pi Phone">
+            <h1>The Pi Phone</h1>
+        </div>
+        <nav class="nav3">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="funciones.html">Funciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <script src="../JS/menu.js"></script>
+    </header>
+
+    <div class="seccion-musica">
+        <h2>Música</h2>
+        <p>Disfruta de la música que te inspira a usar tu Pi Phone al máximo:</p>
+    </div>
+
+    <section id="seccion_descargas">
+        <div class="music-player">
+            <h3>Canción oficial de The Pi Phone</h3>
+            <img src="../Recursos/IMG/Tesla_logo.png" alt="Carátula de la canción" class="song-cover">
+            <div class="player-controls">
+                <button id="play-pause">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                    <div class="progress-dot"></div>
+                </div>
+                <audio id="audio" src="../Recursos/Audio/musica.mp3"></audio>
+            </div>
+        </div>
+    </section>
+
+    <script src="../JS/musicPlayer.js"></script>
+
+</body>
+</html>
